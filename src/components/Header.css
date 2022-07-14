@@ -10,3 +10,6 @@
   display: flex;
   gap: 2rem;
 }
+.header-title {
+  color: var(--mainBlue);
+}
