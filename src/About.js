@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./components/Header";
 
-export default function About() {
+export default function About({ shoppingCart, setShoppingCart }) {
   return (
     <div>
-      <Header />
+      <Header shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
       <h1>About</h1>
     </div>
   );

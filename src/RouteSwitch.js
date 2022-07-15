@@ -9,8 +9,24 @@ export default function RouteSwitch() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route
+          path="/"
+          element={
+            <Home
+              shoppingCart={shoppingCart}
+              setShoppingCart={setShoppingCart}
+            />
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <About
+              shoppingCart={shoppingCart}
+              setShoppingCart={setShoppingCart}
+            />
+          }
+        />
         <Route
           path="/shop"
           element={

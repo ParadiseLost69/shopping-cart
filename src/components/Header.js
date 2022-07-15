@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default function Header({ shoppingCart, setShoppingCart }) {
   return (
@@ -18,10 +19,10 @@ export default function Header({ shoppingCart, setShoppingCart }) {
         <Link to="/about">
           <h2 className="header-navbox-about-button">About</h2>
         </Link>
-        <h2 className="header-navbox-shopping-cart">
-          {" "}
-          {shoppingCart.length} Items
-        </h2>
+        <div className="header-navbox-shopping-cart">
+          {shoppingCart.length}
+          <AiOutlineShoppingCart />
+        </div>
       </div>
     </div>
   );
