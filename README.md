@@ -1,1 +1,1 @@
-A website where people can shop and order things online. Used to practice React and routing.
+A mock website for Anne's furniture store. A store that buys antique furniture and refurbishes it to look modern.

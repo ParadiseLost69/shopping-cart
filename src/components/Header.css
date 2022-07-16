@@ -14,6 +14,6 @@
 .header-title {
   color: var(--mainBlue);
 }
-.header-navbox-shopping-cart {
-  font-size: large !important;
+.header-container .header-navbox-shopping-cart {
+  font-size: large;
 }
