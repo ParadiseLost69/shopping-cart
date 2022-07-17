@@ -7,7 +7,7 @@ export default function Header({ shoppingCart, setShoppingCart }) {
   return (
     <div className="header-container">
       <Link to="/">
-        <h1 className="header-title">Furniture Shop</h1>
+        <h1 className="header-title">Sunday Archive</h1>
       </Link>
       <div className="header-navbox">
         <Link to="/">

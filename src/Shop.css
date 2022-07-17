@@ -1,0 +1,21 @@
+.shop-title {
+  color: var(--mainColor);
+}
+
+.shop-item-image {
+  max-width: 20vw;
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 2rem;
+  max-width: 25vw;
+  padding: 2rem;
+}
+.shop-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

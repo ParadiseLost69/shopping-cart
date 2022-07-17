@@ -5,6 +5,7 @@
   align-items: center;
   border: 1px solid rgba(207, 207, 207, 0.432);
   flex-wrap: wrap;
+  background-color: #191919;
 }
 
 .header-navbox {
@@ -12,8 +13,9 @@
   gap: 2rem;
 }
 .header-title {
-  color: var(--mainBlue);
+  color: var(--secondaryColor);
 }
 .header-container .header-navbox-shopping-cart {
-  font-size: large;
+  font-size: x-large;
+  color: #c6ab80;
 }

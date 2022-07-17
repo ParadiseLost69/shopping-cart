@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+
 :root {
-  --mainBlue: rgb(23, 178, 230);
+  --mainColor: #53362d;
+  --secondaryColor: #c6ab80;
+  background-color: rgba(241, 234, 227, 0.925);
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, "Vollkorn" BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 a {
-  color: var(--mainBlue);
+  color: var(--secondaryColor);
   text-decoration: none;
 }
 a:focus {
