@@ -4,6 +4,7 @@
   --mainColor: #53362d;
   --secondaryColor: #c6ab80;
   background-color: rgba(241, 234, 227, 0.925);
+  --defaultPadding: 1rem;
 }
 
 body {
@@ -24,4 +25,14 @@ a:focus {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+button {
+  font-family: inherit;
+}
+.title {
+  color: var(--mainColor);
+}
+.title-container {
+  display: flex;
+  justify-content: center;
 }

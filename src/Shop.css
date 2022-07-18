@@ -14,8 +14,20 @@
   margin: 2rem;
   max-width: 25vw;
   padding: 2rem;
+  transition: transform 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.shop-item:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .shop-display {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.shop-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

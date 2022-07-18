@@ -5,7 +5,9 @@ export default function About({ shoppingCart, setShoppingCart }) {
   return (
     <div>
       <Header shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />
-      <h1>About</h1>
+      <div className="title-container">
+        <h1 className="title">About</h1>
+      </div>
     </div>
   );
 }
