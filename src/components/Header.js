@@ -19,10 +19,12 @@ export default function Header({ shoppingCart, setShoppingCart }) {
         <Link to="/about">
           <h2 className="header-navbox-about-button">About</h2>
         </Link>
-        <div className="header-navbox-shopping-cart">
-          {shoppingCart.length}
-          <AiOutlineShoppingCart />
-        </div>
+        <Link to="/shopping-cart">
+          <div className="header-navbox-shopping-cart">
+            {shoppingCart.length}
+            <AiOutlineShoppingCart />
+          </div>
+        </Link>
       </div>
     </div>
   );

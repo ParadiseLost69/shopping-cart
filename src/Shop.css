@@ -24,7 +24,9 @@
 }
 .shop-display {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+  place-self: center;
 }
 .shop-display-container {
   display: flex;
