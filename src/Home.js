@@ -9,7 +9,7 @@ export default function Home({ shoppingCart, setShoppingCart }) {
       <div className="home-page-content">
         <div className="home-page-title-container">
           <h1 className="home-page-title">
-            <a style={{ color: "white" }}> Welcome to</a> Sunday Archive
+            <a style={{ color: "white" }}> Welcome to</a> Sunday Archives
           </h1>
           <h2 className="home-page-description">
             We refurbish antique furniture and give it a modern look

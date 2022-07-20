@@ -11,13 +11,14 @@ import ShoppingCart from "./components/ShoppingCart";
 
 export default function RouteSwitch() {
   const [shoppingCart, setShoppingCart] = useState([]);
-  const items = [
+  const [items, setItems] = useState([
     {
       key: 1,
       name: "Dresser",
       price: "$250.58",
       description: "It's a dresser",
       img: dresser,
+      quantity: 0,
     },
     {
       key: 2,
@@ -25,6 +26,7 @@ export default function RouteSwitch() {
       price: "$100.99",
       description: "It's a Table",
       img: table,
+      quantity: 0,
     },
     {
       key: 3,
@@ -32,6 +34,7 @@ export default function RouteSwitch() {
       price: "$49.99",
       description: "It's a Side Table",
       img: sideTable,
+      quantity: 0,
     },
     {
       key: 4,
@@ -39,8 +42,9 @@ export default function RouteSwitch() {
       price: "$250",
       description: "It's a dresser",
       img: dresser2,
+      quantity: 0,
     },
-  ];
+  ]);
   return (
     <BrowserRouter>
       <Routes>
