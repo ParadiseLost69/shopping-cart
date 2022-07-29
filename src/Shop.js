@@ -5,15 +5,6 @@ import "./Shop.css";
 export default function Shop({ shoppingCart, setShoppingCart, items }) {
   //Shop MODAL
   const [currentItem, setCurrentItem] = useState([]);
-  const [isShown, setIsShown] = useState(false);
-
-  //setting whether text is shown or not
-  function handleMouseEnter() {
-    setIsShown(true);
-  }
-  function handleMouseLeave() {
-    setIsShown(false);
-  }
 
   //Adding an item to the cart
   function handleClick(e) {
@@ -32,8 +23,6 @@ export default function Shop({ shoppingCart, setShoppingCart, items }) {
         className="shop-item"
         onClick={handleClick}
         id={item.key}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
         <img className="shop-item-image" id={item.key} src={item.img}></img>
         <div className="shop-name-price-container">
