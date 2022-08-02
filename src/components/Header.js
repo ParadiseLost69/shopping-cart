@@ -22,7 +22,7 @@ export default function Header({ shoppingCart, setShoppingCart, items, setItems,
         </Link>
         <Link to="/shopping-cart">
           <div className="header-navbox-shopping-cart">
-            {showQuantity}
+            {shoppingCart.length}
             <AiOutlineShoppingCart />
           </div>
         </Link>

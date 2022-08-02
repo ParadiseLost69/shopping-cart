@@ -50,3 +50,39 @@
   border-bottom: 1px solid black;
   margin: 1rem;
 }
+/* Modal Information */
+.shop-modal-container {
+  display: flex;
+  justify-content: center;
+}
+.shop-modal {
+  padding: 5px;
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+}
+.modal-image {
+  place-self: center;
+  max-width: 80%;
+  grid-column: 2/-1;
+  grid-row: 1/3;
+  border-radius: 20px;
+}
+.modal-name {
+  grid-column: 2;
+  grid-row: 1;
+}
+.modal-name-price-description {
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.modal-quantity {
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
