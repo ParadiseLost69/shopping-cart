@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-export default function Header({ shoppingCart, setShoppingCart }) {
+export default function Header({ shoppingCart, setShoppingCart, items, setItems, showQuantity }) {
+
   return (
     <div className="header-container">
       <Link to="/">
@@ -21,7 +22,7 @@ export default function Header({ shoppingCart, setShoppingCart }) {
         </Link>
         <Link to="/shopping-cart">
           <div className="header-navbox-shopping-cart">
-            {shoppingCart.length}
+            {showQuantity}
             <AiOutlineShoppingCart />
           </div>
         </Link>

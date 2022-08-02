@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header";
 import "./ShoppingCart.css";
 
-export default function ShoppingCart({ setShoppingCart, shoppingCart, items }) {
-  function addToCart(e) {
-    setShoppingCart((prevCart) => [...prevCart, e.target.id]);
-  }
+export default function ShoppingCart({ setShoppingCart, shoppingCart, items, setItems }) {
 
-  const showCart = shoppingCart.map((product) => {
+
+  const showCart = items.map((product) => {
+    if (product.quantity > 0) {
     return (
       <div className="cart-item-container" key={product.key}>
-        <h1 className="cart-item-name"> {product.name}</h1>
-        <img className="cart-item-image" src={product.img}></img>
+        <h1 className="cart-item-name">
+          {product.name} {product.quantity}
+        </h1>
+        <img className="cart-item-image" src={product.img} alt={product.description}></img>
       </div>
-    );
+    )}
   });
 
   return (

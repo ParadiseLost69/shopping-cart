@@ -45,6 +45,17 @@ export default function RouteSwitch() {
       quantity: 0,
     },
   ]);
+
+  //calculate Quantity
+  function showQuantity() {
+    const objectQuantities = items.map(obj => obj.quantity)
+    const numberedObjectQuantities = objectQuantities.map(item => parseInt(item))
+    const reducedObjectQuantities = numberedObjectQuantities.reduce((a,b) => a + b) 
+
+    return reducedObjectQuantities}
+
+
+
   return (
     <BrowserRouter>
       <Routes>
@@ -54,6 +65,7 @@ export default function RouteSwitch() {
             <Home
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
+              showQuantity = {showQuantity}
             />
           }
         />
@@ -63,6 +75,7 @@ export default function RouteSwitch() {
             <About
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
+              showQuantity = {showQuantity}
             />
           }
         />
@@ -73,6 +86,8 @@ export default function RouteSwitch() {
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
               items={items}
+              setItems={setItems}
+              showQuantity = {showQuantity}
             />
           }
         />
@@ -83,6 +98,8 @@ export default function RouteSwitch() {
               shoppingCart={shoppingCart}
               setShoppingCart={setShoppingCart}
               items={items}
+              setItems = {setItems}
+              showQuantity = {showQuantity}
             />
           }
         />
